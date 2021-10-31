@@ -9,7 +9,7 @@ function Clock() {
     this.second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
  
     this.toString = function() {
-        return this.date + "日" + this.hour + "时" + this.minute + "分"; 
+        return this.date + "日" + this.hour + "时" + this.minute + "分"+this.second+"秒"; 
     };
 	
 	this.toy = function() {
